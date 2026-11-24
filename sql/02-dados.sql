@@ -55,28 +55,25 @@ INSERT INTO Tarifa (ID_Tarifa, Valor_hora, Data_Vigencia) VALUES
   (3, 12.00, '2024-03-06');
 
 -- -----------------------------------------------------
--- Veículos (15) - 15 modelos, 10 marcas; 9 sem cliente (RN01/RN02)
--- -----------------------------------------------------
-INSERT INTO Veiculo (Placa, Id_Cliente, Cor, Cod_Modelo) VALUES
-  ('FKT1A11', 1,    'Prata',    35),  -- Toyota Corolla   (contrato encerrado)
-  ('GHB2B22', 2,    'Preto',    15),  -- Chevrolet Onix   (mensalista)
-  ('JLM3C33', 3,    'Branco',    2),  -- Volkswagen Polo  (mensalista)
-  ('KPR4D44', 4,    'Vermelho',  9),  -- Fiat Argo        (cliente sem contrato)
-  ('MNS5E55', 5,    'Cinza',    44),  -- Hyundai HB20     (cliente sem contrato)
-  ('QRT6F66', 2,    'Azul',     41),  -- Honda Civic      (2º carro do cliente 2, semLUES
-  ('FKT1A11', 1,    'Prata',    35),  -- Toyota Corolla   (contrato encerrado)
-  ('GHB2B22', 2,    'Preto',    15),  -- Chevrolet Onix   (mensalista)
-  ('JLM3C33', 3,    'Branco',    2),  -- Volkswagen Polo  (mensalista)
-  ('KPR4D44', 4,    'Vermelho',  9),  -- Fiat Argo        (cliente sem  contrato)
-  ('RSV7G77', NULL, 'Branco',   46),  -- Hyundai Creta
-  ('STU8H88', NULL, 'Verde',    53),  -- Jeep Renegade
-  ('TUV9J99', NULL, 'Prata',     7),  -- Fiat Uno
-  ('UVW0K10', NULL, 'Preto',    28),  -- Renault Sandero
-  ('VWX1L21', NULL, NULL,       22),  -- Ford Ka
-  ('WXY2M32', NULL, 'Cinza',    18),  -- Chevrolet Tracker
-  ('XYZ3N43', NULL, 'Branco',   57),  -- Peugeot 2008
-  ('BCD4P54', NULL, 'Prata',     1),  -- Volkswagen Gol
-  ('CDE5Q65', NULL, 'Azul',     36);  -- Toyota Corolla Cross
+
+-- Veículos (15) - 15 modelos, 10 marcas, 9 sem cliente (RN01/RN02)
+INSERT INTO Veiculo (Placa, Id_cliente, Cor, Cod_Modelo) VALUES
+  ('FKT1A11', 1,    'Prata',    35), -- Toyota Corolla
+  ('GHB2B22', 2,    'Preto',    15), -- Chevrolet Onix
+  ('JLM3C33', 3,    'Branco',    2), -- Volkswagen Polo
+  ('KPR4D44', 4,    'Vermelho',  9), -- Fiat Argo
+  ('MNS5E55', 5,    'Cinza',    44), -- Hyundai HB20
+  ('QRT6F66', 2,    'Azul',     41), -- Honda Civic
+  ('RSV7G77', NULL, 'Branco',   46), -- Hyundai Creta
+  ('STU8H88', NULL, 'Verde',    53), -- Jeep Renegade
+  ('TUV9J99', NULL, 'Prata',     7), -- Fiat Uno
+  ('UVW0K10', NULL, 'Preto',    28), -- Renault Sandero
+  ('VWX1L21', NULL, NULL,       22), -- Ford Ka
+  ('WXY2M32', NULL, 'Cinza',    18), -- Chevrolet Tracker
+  ('XYZ3N43', NULL, 'Branco',   57), -- Peugeot 2008
+  ('BCD4P54', NULL, 'Prata',     1), -- Volkswagen Gol
+  ('CDE5Q65', NULL, 'Azul',     36); -- Toyota Corolla Cross
+
 
 -- -----------------------------------------------------
 -- Contratos (3, clientes diferentes, 1 encerrado) - RN12/RN14
